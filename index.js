@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    console.log(
-        $('.prompt-string.bottom code #prompt').text()
-    );
     let green = true;
     let str = 'quote';
     let nextChar = 0;
@@ -20,7 +17,14 @@ $(document).ready(function () {
     blinkId = setInterval(blink, 500);
 
     function type () {
-        clearInterval(blinkId);
+        clearInterval(blinkId); // stop blinking, we're typing
+
+        // make sure cursor is visible while we type
+        $('.prompt-string.bottom code #cursor').css({
+            color: '#0f0',
+            backgroundColor: '#0f0'
+        });
+
         if (nextChar < 5) {
             $('.prompt-string.bottom code #prompt').text(
                 $('.prompt-string.bottom code #prompt').text() + str[nextChar]
@@ -29,10 +33,15 @@ $(document).ready(function () {
             nextChar++;
             return;
         }
+        clearInterval(typeId); // done typing
         // TODO: load new quote here
         $('.prompt-string.bottom code #prompt').text('[user@wisdom ~]$ '); // restore prompt string
-        clearInterval(typeId);
+        nextChar = 0; // get ready to type again
+        blinkId = setInterval(blink, 500); // ok, you can blink now
     }
 
-    typeId = setInterval(type, 100);
+    $('button').click(() => {
+        typeId = setInterval(type, 150);
+    });
+
 });
