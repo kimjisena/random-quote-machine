@@ -2,7 +2,8 @@ $(document).ready(function () {
     let green = true;
     let str = 'quote';
     let nextChar = 0;
-    let blinkId, typeId;
+    let blinkId, 
+        typeId;
 
     function blink () {
         let color =  green ? '#0f0' : '#000';
@@ -40,7 +41,7 @@ $(document).ready(function () {
         blinkId = setInterval(blink, 500); // ok, you can blink now
     }
 
-    $('button').click(() => {
+    $('#new-quote').click(() => {
         typeId = setInterval(type, 150);
     });
 
