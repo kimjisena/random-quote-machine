@@ -1,0 +1,28 @@
+{
+  "name": "random-quote-machine",
+  "version": "1.0.0",
+  "description": "Generates a random quote",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimjisena/random-quote-machine.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "web"
+  ],
+  "author": "Kim Jisena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kimjisena/random-quote-machine/issues"
+  },
+  "homepage": "https://github.com/kimjisena/random-quote-machine#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}
