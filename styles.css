@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid black;
 }
 
 html {
   font-size: 62.5%;
-  font-family: Raleway, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   width: 100%;
+  background-color: black;
+  color: rgb(0, 255, 0);
 }
 
 .container {
@@ -29,4 +28,19 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 20vh;
+  font-size: 2rem;
+}
+
+#quote-box {
+  width: 40rem;
+}
+
+#author {
+  margin-right: 1rem;
+  text-align: right;
+}
+
+.prompt-string.bottom code::after {
+  content: 'I';
+  background-color: rgb(0, 255, 0);
 }

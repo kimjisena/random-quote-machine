@@ -4,21 +4,24 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Random Quote Machine</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="./styles.css" rel="stylesheet" />
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="./jquery_script.js"></script>
+        <script src="./index.js"></script>
     </head>
     <body>
         <div class="container">
-            <h1 class="text-center">Random Quote Machine</h1>
+            <h1 class="text-center"><code>Random Quote Machine</code></h1>
             <div class="flex">
                 <div id="quote-box">
-                    <div class="card">
-                        <div class="card-body">
-                            <p id="text">Live as you see fit.</p>
-                        </div>
-                        <div class="card-footer" id="author">Kim Jisena</div>
+                    <p class="prompt-string top"><code>[user@wisdom ~]$ quote</code></p>
+                    <div class="stdout">
+                            <div id="text">
+                                <code>I have learned over the years that when one's mind is made up, this diminishes fear.</code>
+                            </div>
+                        <div id="author"><code>-- Rosa Parks</code></div>
                     </div>
+                    <p class="prompt-string bottom"><code>[user@wisdom ~]$ </code></p>
                     <button id="new-quote">New Quote</button>
                     <a id="tweet-quote" href="https://twitter.com/intent/tweet"><button>Tweet Quote</button></a>
                 </div>
