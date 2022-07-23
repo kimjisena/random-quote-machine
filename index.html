@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Random Quote Machine</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="./styles.css" rel="stylesheet" />
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,9 +22,9 @@
                             </div>
                         <div id="author"><code>-- Rosa Parks</code></div>
                     </div>
-                    <p class="prompt-string bottom"><code>[user@wisdom ~]$ <span>I</span></code></p>
+                    <p class="prompt-string bottom"><code><span id="prompt">[user@wisdom ~]$ </span><span id="cursor">I</span></code></p>
+                    <a id="tweet-quote" href="https://twitter.com/intent/tweet"><i class="fab fa-twitter"></i></a>
                     <button id="new-quote">New Quote</button>
-                    <a id="tweet-quote" href="https://twitter.com/intent/tweet"><button>Tweet Quote</button></a>
                 </div>
             </div>
         </div>
