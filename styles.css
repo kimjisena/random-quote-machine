@@ -40,7 +40,7 @@ h1 {
   text-align: right;
 }
 
-.prompt-string.bottom code::after {
+.prompt-string.bottom code span {
   content: 'I';
   background-color: rgb(0, 255, 0);
 }
