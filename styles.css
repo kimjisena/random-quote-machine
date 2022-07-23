@@ -1,7 +1,9 @@
 h1 {
   color: aqua;
+  text-align: center;
 }
 
-#quote-box {
-  width: 10rem;
+.flex {
+  display: flex;
+  justify-content: center;
 }
